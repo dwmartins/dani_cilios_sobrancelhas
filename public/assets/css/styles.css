@@ -38,10 +38,10 @@ p, a, h1, h2, h3, h4, h5, h6 {
     width: 64px;
     height: 64px;
     margin: 8px;
-    border: 8px solid var(--bs-primary);
+    border: 8px solid var(--brand-color);
     border-radius: 50%;
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: var(--bs-primary) transparent transparent transparent;
+    border-color: var(--brand-color) transparent transparent transparent;
 }
 
 .lds-ring div:nth-child(1) {
@@ -74,7 +74,7 @@ p, a, h1, h2, h3, h4, h5, h6 {
     width: 200px;
 }
 
-#navBar li:hover a {
+#navBar li:hover a, i {
     color: var(--brand-color) !important;
 }
 
@@ -134,7 +134,7 @@ p, a, h1, h2, h3, h4, h5, h6 {
 
 .card_customers_choose .img_2 {
     top: 200px;
-    right: 0;
+    right: 10px;
 }
 
 .card_customers_choose .img_3 {
@@ -153,6 +153,11 @@ p, a, h1, h2, h3, h4, h5, h6 {
 
     .card_customers_choose .img_1, .img_2, .img_3 {
         width: 260px;;
+    }
+
+    .card_customers_choose .img_2 {
+        top: 200px;
+        right: 0px;
     }
 
     .card_customers_choose .img_3 {

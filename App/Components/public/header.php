@@ -29,6 +29,16 @@
                         contato
                     </a>
                 </li>
+
+                <div class="d-flex gap-3 gap-lg-0">
+                    <a href="#" class="nav-link">
+                        <i class="fa-brands fa-instagram fs-4"></i>
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <i class="fa-brands fa-whatsapp fs-4"></i>
+                    </a>
+                </div>
             </ul>
         </div>
     </div>

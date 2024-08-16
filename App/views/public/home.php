@@ -7,7 +7,7 @@
                 <h1 class="text-light mb-3">
                     <span class="text-brand">Dani</span>
                     <br>
-                    <span>cílios e sobrancelhas</span>
+                    <span>Cílios & Sobrancelhas</span>
                 </h1>
 
                 <div class="col-12">
