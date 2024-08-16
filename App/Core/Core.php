@@ -39,8 +39,7 @@ class Core {
                     extract($result['data']);
                     $view = $result['view'];
 
-                    $masterLayout = self::getMasterLayout($url);
-                    require __DIR__ . "/../views/" . $masterLayout;
+                    require __DIR__ . "/../views/master.php";
                 }
                 return;
             }
@@ -50,14 +49,6 @@ class Core {
             self::routeNotFoundResponse($url);
         } else {
             self::methodNotAllowedResponse($url);
-        }
-    }
-
-    private static function getMasterLayout($url) {
-        if (strpos($url, '/app') !== false) {
-            return 'admin/master.php';
-        } else {
-            return 'public/master.php';
         }
     }
 
