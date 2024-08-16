@@ -8,7 +8,7 @@ class HomeController {
     public function index(Request $request, $params) {
         return [
             'view' => 'home.php',
-            'data' => ['title' => 'Home']
+            'data' => ['title' => 'Dani cílios e sobrancelhas']
         ];
     }
 }

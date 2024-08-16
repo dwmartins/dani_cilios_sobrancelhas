@@ -111,7 +111,7 @@ p, a, h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-outline-brand {
-    border: 1px solid var(--brand-color);
+    border: 2px solid var(--brand-color);
     color: #fff;
     border-radius: 25px;
 }
@@ -121,8 +121,42 @@ p, a, h1, h2, h3, h4, h5, h6 {
     background-color: var(--brand-color);
 }
 
+.card_customers_choose .img_1, .img_2, .img_3 {
+    width: 350px;
+    position: absolute;
+    border: 8px solid #fff;
+}
+
+.card_customers_choose .img_1 {
+    top: 50px;
+    left: 0;
+}
+
+.card_customers_choose .img_2 {
+    top: 200px;
+    right: 0;
+}
+
+.card_customers_choose .img_3 {
+    top: 400px;
+    left: 0;
+}
+
+.card_customers_choose .images {
+    min-height: 600px;
+}
+
 @media (max-width: 576px) {
     .btn_learn_more {
         width: 100%;
+    }
+
+    .card_customers_choose .img_1, .img_2, .img_3 {
+        width: 260px;;
+    }
+
+    .card_customers_choose .img_3 {
+        top: 350px;
+        left: 0;
     }
 }
