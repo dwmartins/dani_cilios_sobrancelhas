@@ -43,7 +43,7 @@
 <section id="services" class="my-5">
     <div class="container">
         <h3 class="text-center fw-bold">Nossos Serviços</h3>
-        <div class="divider-lg"></div>
+        <div class="divider-lg text-center"></div>
         <p class="text-center text-secondary mt-4 mb-4">Nossos renomados especialistas em cílios e sobrancelhas irão transformar suas sobrancelhas e cílios, deixando você deslumbrante e muito mais. Você sairá com uma aparência e se sentindo melhor do que nunca.</p>
 
         <div class="row mt-4">

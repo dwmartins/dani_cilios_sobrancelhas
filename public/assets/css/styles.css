@@ -12,6 +12,25 @@ p, a, h1, h2, h3, h4, h5, h6 {
     --brand-color: #EE9F9F;
 }
 
+::placeholder {
+    color: #b1b1b1 !important;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.link_outline_none {
+    text-decoration: none;
+}
+
 /* Spinner when loading the page */
 .spinner {
     width: 100%;
@@ -74,7 +93,7 @@ p, a, h1, h2, h3, h4, h5, h6 {
     width: 200px;
 }
 
-#navBar li:hover a, i {
+#navBar li:hover, #navBar a:hover{
     color: var(--brand-color) !important;
 }
 
@@ -119,6 +138,17 @@ p, a, h1, h2, h3, h4, h5, h6 {
 .btn-outline-brand:hover {
     color: #fff;
     background-color: var(--brand-color);
+}
+
+.btn-brand {
+    background-color: var(--brand-color);
+    color: #fff;
+}
+
+.btn-brand:hover {
+    color: #000;
+    background-color: #fff;
+    border: 2px solid var(--brand-color);
 }
 
 .card_customers_choose .img_1, .img_2, .img_3 {
@@ -177,18 +207,44 @@ p, a, h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-.divider-lg {
-    text-align: center;
-}
-
 .divider-lg::after {
     content: '';
     display: inline-block;
     width: 90px;
     height: 3px;
-    background-color: #ee9f9f;
+    background-color: var(--brand-color);
 }
 
 #services svg {
     fill: var(--brand-color);
+}
+
+#contactView h1 {
+    font-family: "Playfair Display", serif !important;
+    letter-spacing: 0.06em;
+}
+
+.custom_placeholder::placeholder {
+    color: #b1b1b1 !important;
+}
+
+.form-control:focus {
+    border-color: var(--brand-color);
+    box-shadow: 0 0 0 0.2rem rgba(238, 159, 159, 0.25);
+}
+
+#contactView form button {
+    width: 280px;
+}
+
+@media (max-width: 576px) {
+    #contactView form button {
+        width: 100%;
+    } 
+}
+
+#contactView h5 {
+    font-family: "Playfair Display", serif !important;
+    letter-spacing: 0.06em;
+    font-weight: 700;
 }

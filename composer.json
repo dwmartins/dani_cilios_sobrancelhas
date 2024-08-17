@@ -6,7 +6,9 @@
         },
         "files": [
             "App/Utils/Logger.php",
-            "App/Utils/ShowAlertConsole.php"
+            "App/Utils/ShowAlertConsole.php",
+            "App/Utils/flash.php",
+            "App/Utils/redirect.php"
         ]
     },
     "authors": [
