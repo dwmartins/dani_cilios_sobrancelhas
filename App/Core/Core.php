@@ -46,7 +46,7 @@ class Core {
         }
 
         if (!$routesFound) {
-            self::routeNotFoundResponse($url);
+            redirect("/");
         } else {
             self::methodNotAllowedResponse($url);
         }
@@ -56,12 +56,6 @@ class Core {
         logError('The "' . $_SERVER['REQUEST_METHOD'] . '" method is not allowed in "' . $url . '"');
         http_response_code(405);
         echo "The (" . $_SERVER['REQUEST_METHOD'] . ") method is not allowed in ($url)";
-    }
-
-    private static function routeNotFoundResponse($url) {
-        logError("Route not found: $url");
-        http_response_code(404);
-        echo "Sorry, route not found.";
     }
 
     private static function handleRouteNotFound($controller, $action) {

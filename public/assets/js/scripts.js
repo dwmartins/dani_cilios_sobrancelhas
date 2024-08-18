@@ -3,7 +3,7 @@ $(document).ready(function() {
     // Check for an alert
     if (localStorage.getItem('alert')) {
         const alert = JSON.parse(localStorage.getItem('alert'));
-        showToast(alert.type, alert.message);
+        showAlert(alert.type, alert.message);
         localStorage.removeItem('alert');
     }
 
@@ -39,7 +39,7 @@ $(document).ready(function() {
     });
 })
 
-function showToast(type, message) {
+function showAlert(type, message) {
     const toastContainer = document.getElementById('toastContainer');
 
     const toastEl = document.createElement('div');

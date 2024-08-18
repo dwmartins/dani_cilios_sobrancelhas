@@ -13,7 +13,16 @@ class ContactController {
     }
 
     public function sendMessage(Request $request, $params) {
-        $message = "Mensagem encaminhada com sucesso.";
-        redirectWithMessage("/contato", "success", $message);
+        try {
+            $data = $request->body();
+
+            $sendEmailController = new SendEmailController();
+            $sendEmailController->contact($data);
+
+            redirectWithMessage("/contato", "success", "Mensagem encaminhada com sucesso.");
+        } catch (\Exception $e) {
+            logError($e->getMessage());
+            redirectWithMessage("/contato", "error", "Oops, houve um erro, tente novamente.");
+        }
     }
 }
