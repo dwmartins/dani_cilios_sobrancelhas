@@ -23,6 +23,7 @@
 
     <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
     <script src="/assets/js/scripts.js"></script>
+    <script src="/assets/js/validations.js"></script>
 </head>
 
 <body>
