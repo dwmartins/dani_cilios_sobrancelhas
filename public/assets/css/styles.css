@@ -124,7 +124,7 @@ input[type="number"] {
 }
 
 .cover_image h1 {
-    font-size: clamp(50px, 8vw, 65px);
+    font-size: clamp(40px, 8vw, 65px);
     font-family: "Playfair Display", serif !important;
     font-weight: 700;
 }
@@ -247,4 +247,12 @@ input[type="number"] {
     font-family: "Playfair Display", serif !important;
     letter-spacing: 0.06em;
     font-weight: 700;
+}
+
+footer .logo_footer {
+    width: 250px;
+}
+
+footer li:hover, footer a:hover{
+    color: var(--brand-color) !important;
 }

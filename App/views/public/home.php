@@ -126,3 +126,5 @@
         </div>
     </div>
 </section>
+
+<?php require ROOT_COMPONENTS . "public/footer.php"; ?>
